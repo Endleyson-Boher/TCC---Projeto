@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Cadastro</title>
-	<link rel="stylesheet" href="assets/css/estiloLog.css"/>
-	<script src="https://kit.fontawesome.com/eb3f19e89b.js" crossorigin="anonymous"></script>
-	<meta charset="utf-8">
-</head>
-<body>
-	<div>
-		<form method="POST">
-			<a id="na" href="index.html"><i class="far fa-arrow-alt-circle-left"></i> Voltar</a>
-			<img src="images/MerceariaLogo.png" width="250">
-			<h1>Faça seu <strong>Cadastro</strong></h1>
-			<br>
-			<br>
-			<label id="E-mail" name="E-mail">E-mail<input type="text" placeholder="Digite seu E-mail"></label>
-			<br>
-			<label id="nome" name="nome">Nome<input type="text" placeholder="Informe seu nome"></label>
-			<br>
-			<label id="sobrenome" name="sobrenome">Sobrenome<input type="text" placeholder="Informe seu sobrenome"></label>
-			<br>
-			<label id="idade" name="idade">Data de Nasc.<input type="date"></label>
-			<br>
-			<label id="genero" name="genero" type="text">Genêro<br><select>
-			<option value="" id="" ></option>
-			<option value="" id="" >Masculino</option>
-			<option value="" id="" >Feminino</option>
-			<option value="" id="" >Outro</option>
-			</select></label>
-			<br>
-			<br>
-			<label id="senha" name="senha">Senha<input type="password" name="senha" placeholder="Digite sua senha"></label>
-			<br>
-			<label id="senha" name="senha">Senha<input type="password" name="senhaconf" placeholder="Confirme sua senha"></label>
-			<button id="BotaoLog">Continuar</button><br>
-			<br>
-			<a href="Login.html">Já tenho cadastro <i class="fas fa-angle-right"></i></a>
-		</form>
-	</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styleLog.css">
+        <link rel="shortcut icon" href="images/LOGOTIPO/Logo1.ico">
+        <script src="https://kit.fontawesome.com/eb3f19e89b.js" crossorigin="anonymous"></script>
+        <title>Cadastro - Mercearia do Paulinho</title>
+    </head>
+    <body>
+        <div class="main-login">
+            <div class="left-login">
+                <h1>Faça seu <strong>Cadastro</strong></h1>
+                <img src="images/LOGOTIPO/LogLogo.png" class="left-login-image" alt="Logo Mercearia">
+            </div>
+
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>Cadastre-se</h1>
+                    <div class="textfield">
+                        <label for="usuario">E-mail</label>
+                        <input type="text" name="usuario" placeholder="Digite seu E-mail">
+                    </div>
+                    <div class="textfield">
+                        <label for="usuario">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha">
+                        <br>
+                        <label id="senha" name="senha">Confirme sua senha</label>
+                        <input type="password" name="senhaconf" placeholder="Confirme sua senha">
+                    </div>
+                    <button href="Cadastro.html" class="btn-login">Cadastrar</button>
+                    <a href="Login.html"><i class="fas fa-angle-left"></i> Já tem Cadastro? Entre <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
+

@@ -1,39 +1,37 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Login</title>
-	<link rel="stylesheet" href="assets/css/estiloLog.css"/>
-	<script src="https://kit.fontawesome.com/eb3f19e89b.js" crossorigin="anonymous"></script>
-	<meta charset="utf-8">
-</head>
-<body>
-	<div>
-		<form method="POST">
-			<a id="na" href="index.html"><i class="far fa-arrow-alt-circle-left"></i> Voltar</a>
-			<img src="images/MerceariaLogo.png" width="250">
-			<h1>Faça seu <strong>Login</strong></h1>
-			<br>
-			<br>
-			<label id="E-mail" name="E-mail">E-mail<input type="text" placeholder="Digite seu E-mail"></label>
-			<br>
-			<label id="senha" name="senha">Senha<input type="password" placeholder="Digite sua senha"></label>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styleLog.css">
+        <link rel="shortcut icon" href="images/LOGOTIPO/Logo1.ico">
+        <script src="https://kit.fontawesome.com/eb3f19e89b.js" crossorigin="anonymous"></script>
+        <title>Login - Mercearia do Paulinho</title>
+    </head>
+    <body>
+        <div class="main-login">
+            <div class="left-login">
+                <h1>Faça seu <strong>Login</strong></h1>
+                <img src="images/LOGOTIPO/LogLogo.png" class="left-login-image" alt="Logo Mercearia">
+            </div>
 
-			<label><input type="checkbox" id="manter">Mantenha-me conectado</label>
-
-			<!--<a id="BotaoLog" href="Hello.html">Entrar</a>-->
-			<br>
-			<button id="BotaoLog">Entrar</button><br>
-			<br>
-			<a href="#"><i class="fas fa-angle-left"></i> Esqueci minha senha <i class="fas fa-angle-right"></i></a>
-			<br>
-			<a href="Cadastro.html"><i class="fas fa-angle-left"></i> Não é cadastrado? Cadastre-se <i class="fas fa-angle-right"></i></a>
-			<br>
-			<br>
-			<h2>Login por outras Contas</h2>
-			<br>
-			<button id="Facebook"><i class="fab fa-facebook"></i>acebook</button>
-		</form>
-	</div>
-</body>
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>Login</h1>
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" placeholder="Digite seu E-mail">
+                    </div>
+                    <div class="textfield">
+                        <label for="usuario">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha">
+                    </div>
+                    <button class="btn-login">Entrar</button>
+                    <a href="Cadastro.html"><i class="fas fa-angle-left"></i> Não tem Login? Cadastre-se <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
+
