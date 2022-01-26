@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
         <link rel="stylesheet" href="assets/css/main.css"/>
 		<link rel="shortcut icon" href="images/LOGOTIPO/Logo1.ico">
+        <script src="assets/js/carrinho.js"></script>
 	</head>
     <body class="is-preload">
 			<div id="wrapper">
@@ -28,13 +29,15 @@
                                                 <div class="price">
                                                      <div>
                                                         <del>R$ 3,69</del><br>
-                                                        <ins>R$ 2,98</ins>
+                                                        <ins>R$ 2,00</ins>
                                                     </div>
                                                     <span class="price-info"> </span>
                                                 </div>
-                                            </div> <br>
+                                            </div> 
+                                            qtd: <input class="quantidade" type="number" value="1" min="1" max="10" id="qtd1">
+                                            <br><br>
                                             <ul class="actions">
-												<li><a href="#" class="button">Adicionar Ao Carrinho</a></li>
+                                                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Leite Integral Ninho', document.getElementById('qtd1').value, '2.00', 1)">Adicionar Ao Carrinho</button>
 											</ul>
 										</article>
 										<article>
@@ -45,13 +48,15 @@
                                                 <div class="price">
                                                      <div>
                                                         <del>R$ 40,00</del><br>
-                                                        <ins>R$ 38,80</ins>
+                                                        <ins>R$ 38,00</ins>
                                                     </div>
                                                     <span class="price-info">4x de R$ 10,00 </span>
                                                 </div>
-                                            </div> <br>
+                                            </div> 
+                                            qtd: <input class="quantidade" type="number" value="1" min="1" max="10" id="qtd2">
+                                            <br><br>
                                             <ul class="actions">
-												<li><a href="#" class="button">Adicionar Ao Carrinho</a></li>
+                                                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Queijo Suiço', document.getElementById('qtd2').value, '38.00', 2)">Adicionar Ao Carrinho</button>
 											</ul>
 										</article>
 										<article>
@@ -66,9 +71,11 @@
                                                     </div>
                                                     <span class="price-info">5 uni. por R$ 33,95</span>
                                                 </div>
-                                            </div> <br>
+                                            </div>
+                                            qtd: <input class="quantidade" type="number" value="1" min="1" max="10" id="qtd3">
+                                            <br><br>
                                             <ul class="actions">
-												<li><a href="#" class="button">Adicionar Ao Carrinho</a></li>
+                                                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Requeijão Tradicional Vigor', document.getElementById('qtd3').value, '7.79', 3)">Adicionar Ao Carrinho</button>
 											</ul>
 										</article>
 										<article>
@@ -83,11 +90,13 @@
                                                     </div>
                                                     <span class="price-info"> </span>
                                                 </div>
-                                            </div> <br>
+                                            </div>
+                                            qtd: <input class="quantidade" type="number" value="1" min="1" max="10" id="qtd4">
+                                            <br><br>
                                             <ul class="actions">
-												<li><a href="#" class="button">Adicionar Ao Carrinho</a></li>
+                                                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Queijo Minas', document.getElementById('qtd4').value, '19.99', 4)">Adicionar Ao Carrinho</button>
 											</ul>
-										</article>
+                                        </article>
 										<article>
 											<a href="#" class="image"><img src="images/Latcinios/Queijo Parmesao.jpeg" alt="" /></a>
 											<h3>Queijo Parmesão</h3>
@@ -100,9 +109,11 @@
                                                     </div>
                                                     <span class="price-info">4 Uni. por R$ 70,90 </span>
                                                 </div>
-                                            </div> <br>
+                                            </div>
+                                            qtd: <input class="quantidade" type="number" value="1" min="1" max="10" id="qtd5">
+                                            <br><br>
                                             <ul class="actions">
-												<li><a href="#" class="button">Adicionar Ao Carrinho</a></li>
+                                                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Queijo Parmesão', document.getElementById('qtd5').value, '25.00', 5)">Adicionar Ao Carrinho</button>
 											</ul>
 										</article>
                                         <article>
@@ -113,7 +124,6 @@
 
 						</div>
 					</div>
-
     </body>
         <!-- Sidebar -->
         <div id="sidebar">
@@ -135,7 +145,7 @@
                             <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                             <li><a href="Login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
                             <li><a href="Cadastro.html"><i class="fas fa-user"></i> Cadastro</a></li>
-                            <li><a href="Carrinho.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                            <li><a href="Carrinho.html"><i class="fas fa-shopping-cart"></i> Lista de Compras</a></li>
                             <li>
                                 <span class="opener">Loja</span>
                                 <ul>
@@ -145,7 +155,7 @@
                                     <li><a href="Verduras.html">Verduras</a></li>
                                 </ul>
                             </li>
-                            <li><a href="https://wa.me/5524992817903?text=Ol%C3%A1%2C+vim+do+seu+GitHub" class="icon brands fa-whatsapp"> Entre em contato conosco</a></li>
+                            <li><a href="#" class="icon brands fa-whatsapp"> Entre em contato conosco</a></li>
                             <li><a href="Sobre.html">Sobre Nós</a></li>
                             <br><br><br><br><br><br><br><br>
                     

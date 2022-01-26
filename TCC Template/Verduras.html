@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
         <link rel="stylesheet" href="assets/css/main.css"/>
 		<link rel="shortcut icon" href="images/LOGOTIPO/Logo1.ico">
+        <script src="assets/js/carrinho.js"></script>
 	</head>
     <body class="is-preload">
 			<div id="wrapper">
@@ -29,9 +30,11 @@
                                                     </div>
                                                     <span class="price-info"></span>
                                                 </div>
-                                            </div> <br>
+                                            </div>
+                                            qtd: <input class="quantidade" type="number" value="1" min="1" max="10" id="qtd14">
+                                            <br><br>
                                             <ul class="actions">
-												<li><a href="#" class="button">Adicionar Ao Carrinho</a></li>
+                                                <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Tomate', document.getElementById('qtd14').value, '13.63', 14)">Adicionar Ao Carrinho</button>
 											</ul>
 										</article>
 									</div>
@@ -61,7 +64,7 @@
                         <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                         <li><a href="Login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
                         <li><a href="Cadastro.html"><i class="fas fa-user"></i> Cadastro</a></li>
-                        <li><a href="Carrinho.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                        <li><a href="Carrinho.html"><i class="fas fa-shopping-cart"></i> Lista de Compras</a></li>
                         <li>
                             <span class="opener">Loja</span>
                             <ul>
@@ -71,7 +74,7 @@
 								<li><a href="Verduras.html">Verduras</a></li>
                             </ul>
                         </li>
-                        <li><a href="https://wa.me/5524992817903?text=Ol%C3%A1%2C+vim+do+seu+GitHub" class="icon brands fa-whatsapp"> Entre em contato conosco</a></li>
+                        <li><a href="#" class="icon brands fa-whatsapp"> Entre em contato conosco</a></li>
                         <li><a href="Sobre.html">Sobre Nós</a></li>
                         <br><br><br><br><br><br><br><br>
                 
